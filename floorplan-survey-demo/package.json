@@ -1,0 +1,39 @@
+{
+  "name": "floorplan-survey-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "data": "tsx scripts/generate-demo-data.ts",
+    "dev": "concurrently -k -n api,web \"tsx watch scripts/dev-server.ts\" \"vite\"",
+    "build": "npm run data && tsc --noEmit && vite build",
+    "preview": "tsx scripts/dev-server.ts --serve-dist",
+    "test": "vitest run",
+    "import": "tsx scripts/import-data.ts",
+    "loadtest": "tsx scripts/loadtest.ts",
+    "e2e": "tsx scripts/e2e.ts",
+    "verify:function": "tsx scripts/verify-function.ts"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "concurrently": "^9.1.2",
+    "esbuild": "^0.28.2",
+    "fflate": "^0.8.2",
+    "playwright": "^1.65.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vite": "^6.3.0",
+    "vitest": "^3.2.0"
+  }
+}

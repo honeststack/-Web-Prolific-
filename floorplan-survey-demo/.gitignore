@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.netlify/
+.data/
+public/RPLAN_triplets/
+public/survey_items/
+.e2e/
+*.log

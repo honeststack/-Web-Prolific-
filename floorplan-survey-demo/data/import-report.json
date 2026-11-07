@@ -1,0 +1,23 @@
+{
+ "generatedAt": "2026-11-07T08:50:34.657Z",
+ "source": "ダミーデータ（RPLAN_triplets と同じ構成）",
+ "ok": true,
+ "rows": 3000,
+ "validTriplets": 3000,
+ "uniqueAnchors": 600,
+ "imagesExpected": 9000,
+ "imagesValid": 9000,
+ "conditionCounts": {
+  "a": 600,
+  "b": 300,
+  "c": 300,
+  "d": 600,
+  "e": 300,
+  "f": 300,
+  "g": 600
+ },
+ "errorCounts": {},
+ "warningCounts": {},
+ "errors": [],
+ "warnings": []
+}

@@ -1,0 +1,78 @@
+{
+ "generatedAt": "2026-11-07T08:50:34.824Z",
+ "source": "検出確認用の破損サンプル（意図的に破損）",
+ "ok": false,
+ "rows": 15,
+ "validTriplets": 8,
+ "uniqueAnchors": 8,
+ "imagesExpected": 45,
+ "imagesValid": 30,
+ "conditionCounts": {
+  "a": 2,
+  "b": 1,
+  "c": 0,
+  "d": 2,
+  "e": 2,
+  "f": 1,
+  "g": 0
+ },
+ "errorCounts": {
+  "画像の欠損": 1,
+  "画像の破損": 2,
+  "問題フォルダの欠損": 1,
+  "triplet_id重複": 1,
+  "抽出条件を識別できない": 1,
+  "CSVの空欄": 1
+ },
+ "warningCounts": {
+  "CSVにないフォルダ": 1,
+  "問題数が想定と異なる": 1
+ },
+ "errors": [
+  {
+   "type": "画像の欠損",
+   "tripletId": "10015_a_1",
+   "detail": "c.png がありません"
+  },
+  {
+   "type": "画像の破損",
+   "tripletId": "10022_b_1",
+   "detail": "a.png: IDATチャンクが途中で切れています"
+  },
+  {
+   "type": "画像の破損",
+   "tripletId": "10029_g_1",
+   "detail": "b.png: PNG署名がありません"
+  },
+  {
+   "type": "問題フォルダの欠損",
+   "tripletId": "10036_e_1",
+   "detail": "画像フォルダがありません"
+  },
+  {
+   "type": "triplet_id重複",
+   "tripletId": "10043_f_1",
+   "detail": "14行目が既出のIDです"
+  },
+  {
+   "type": "抽出条件を識別できない",
+   "tripletId": "10015_x_9",
+   "detail": "IDの形式は <番号>_<a〜g>_<連番> を想定しています"
+  },
+  {
+   "type": "CSVの空欄",
+   "detail": "16行目に空欄があります"
+  }
+ ],
+ "warnings": [
+  {
+   "type": "CSVにないフォルダ",
+   "tripletId": "99999_a_1",
+   "detail": "問題として使用されません"
+  },
+  {
+   "type": "問題数が想定と異なる",
+   "detail": "想定 12 組 / 実際 15 組"
+  }
+ ]
+}
